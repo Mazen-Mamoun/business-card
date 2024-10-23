@@ -1,3 +1,4 @@
+import 'package:business_card_app/widget/custom_card.dart';
 import 'package:flutter/material.dart';
 
 class CardView extends StatelessWidget {
@@ -17,11 +18,11 @@ class CardView extends StatelessWidget {
               child: CircleAvatar(
                 maxRadius: 93,
                 backgroundImage: AssetImage(
-                  'images/1679170985199.jpg',
+                  'images/tharwat.png',
                 ),
               ),
             ),
-           const Text(
+            const Text(
               'Mazen Mamoun',
               style: TextStyle(
                 fontSize: 32,
@@ -43,9 +44,15 @@ class CardView extends StatelessWidget {
               endIndent: 35,
               color: Colors.white.withOpacity(0.4),
             ),
+            const SizedBox(
+              height: 15,
+            ),
+            const CustomCard(),
           ],
         ),
       ),
     );
   }
 }
+
+
